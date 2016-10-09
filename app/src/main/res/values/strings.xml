@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Backendless Service</string>
+    <string name="profile_img_text">Profile image (tap to choose)</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_account">No account yet? Create one</string>
+    <string name="name">Name</string>
+    <string name="verify_password">Re-enter Password</string>
+    <string name="login_if_can">Already a member? Login</string>
+
+    <string name="profile_image_key">profileImageKey</string>
+    <string name="adapter_items_key">adapterItemsKey</string>
+    <string name="date">Date</string>
+    <string name="login_type">Login type</string>
+</resources>

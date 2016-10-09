@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/def_padding"
+        android:paddingRight="@dimen/def_padding"
+        android:paddingTop="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/profile_img_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/def_padding"
+                android:paddingLeft="4dp"
+                android:text="@string/profile_img_text"
+                android:textSize="@dimen/text_size" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/profile_img_text"
+                android:layout_toRightOf="@id/profile_img_text"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                app:civ_border_color="@color/colorBlack"
+                app:civ_border_width="@dimen/border_width" />
+
+            <EditText
+                android:id="@+id/birth_date_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/profile_img_text"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/profile_img_text"
+                android:layout_below="@+id/profile_img_text"
+                android:layout_marginTop="@dimen/def_margin"
+                android:editable="false"
+                android:hint="@string/date_of_birth" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/birth_date_image"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/profile_image"
+                android:layout_margin="@dimen/def_margin"
+                android:layout_toRightOf="@id/birth_date_field"
+                android:src="@drawable/ic_date_range_black_24dp"
+                app:civ_border_color="@color/colorBlack"
+                app:civ_border_width="@dimen/border_width" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_margin"
+            android:layout_marginTop="@dimen/def_margin">
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_margin"
+            android:layout_marginTop="@dimen/def_margin">
+
+            <EditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_margin"
+            android:layout_marginTop="@dimen/def_margin">
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_margin"
+            android:layout_marginTop="@dimen/def_margin">
+
+            <EditText
+                android:id="@+id/verify_password_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/verify_password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/registration_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_padding"
+            android:layout_marginTop="@dimen/def_padding"
+            android:padding="@dimen/def_margin"
+            android:text="@string/create_account" />
+
+        <TextView
+            android:id="@+id/to_login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/def_padding"
+            android:gravity="center"
+            android:text="@string/login_if_can"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+</ScrollView>
